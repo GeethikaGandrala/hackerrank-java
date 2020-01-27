@@ -1,0 +1,8 @@
+from itertools import permutations
+l1 , l2 = input().split()
+l = list(permutations(str(l1),int(l2)))
+for i in sorted(l):
+    str = ''
+    for k in i:
+        str += k
+    print(str)
